@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    font-family: 'my_font';
+    
+}
+@font-face {
+    font-family: 'my_font';
+    src: url(../fonts/Vazir-Bold.ttf);
+}
+body{
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+
+}
+
+.form{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(240, 248, 255, 0.523);
+    box-shadow: 2px 2px 5px gray;
+    top:155px;
+    left: 510px;
+    border-radius: 30px;
+
+}
+.user{
+    position: absolute;
+    display: inline;
+    
+}
+.background{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(1, 9, 47);
+    border-radius: 50%;
+    box-shadow: 5px 5px 8px gray;
+    top: 90px;
+    left: 682px;
+}
+.icon{
+    
+    color: rgba(240, 248, 255, 0.863);
+    height: 100px;
+    width: 100px;
+    top: 109px;
+    left: 708px;
+    
+}
+#email_icon{
+    position: relative;
+    background-color:rgb(1, 9, 47);
+    color: aliceblue;
+    width: 50px;
+    height: 49.5px;
+    top: 154.8px;
+    right: 60px;
+}
+#email_icon svg{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    top: 12px;
+    right: 12px;
+    
+}
+
+#email{
+    position: relative;
+    background-color:rgb(43, 73, 111) ;
+    top: 105px;
+    right: 110px;
+    width: 320px;
+    height: 50px;
+    border: none;
+}
+#password_icon{
+    position: relative;
+    background-color:rgb(1, 9, 47);
+    color: aliceblue;
+    width: 50px;
+    height: 50px;
+    top: 120px;
+    right: 60px;
+}
+#password_icon svg{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    top: 12px;
+    right: 12px;
+}
+#password{
+    position: relative;
+    background-color:rgb(43, 73, 111) ;
+    top: 70px;
+    right: 110px;
+    width: 320px;
+    height: 50px;
+    border: none;
+    
+}
+#forget{
+    position: relative;
+    top:140px;
+    right: 70px;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(1, 9, 47);
+}
+#remember{
+    position: relative;
+    top: 185px;
+    left: 30px;
+}
+#remember-txt{
+    position: relative;
+    top: 182px;
+    left: 30px;
+    font-size: 14px;
+    color: rgb(1, 9, 47);
+}
+.login{
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    top: 557px;
+    left: 580px;
+    border: none;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: rgba(240, 248, 255, 0.347);
+    box-shadow: 2px 2px 5px gray;
+    color: rgb(1, 9, 47);
+}

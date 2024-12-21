@@ -1,0 +1,143 @@
+*{
+    font-family: 'my-font';
+}
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background: linear-gradient(135deg, #ff4081, #8e24aa);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* ارتفاع کل صفحه */
+
+}
+@font-face {
+    font-family: 'my-font';
+    src: url(../fonts/Vazir-Bold.ttf);
+}
+.container {
+    display: flex;
+    padding: 20px;
+    height: calc(100vh - 40px); /* ارتفاع کمتر از فضای padding */
+    margin-top: 20px; /* ایجاد فاصله از بالا */
+    box-sizing: border-box; /* برای در نظر گرفتن padding */
+}
+.sidebar, .main-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+.sidebar {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-content {
+    width: 75%;
+   
+    
+   
+}
+.progress-container {
+    position: relative;
+    text-align: center;
+    top: -10px;
+}
+.sidebar h2 {
+    margin-bottom: 5px; /* فاصله کمتر */
+}
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.new-section {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    color: #333;
+}
+
+.progress-bar-inner {
+    width: 70%;
+    height: 20px;
+    background-color: #4caf50;
+}
+.btn, .btn-home {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn:hover, .btn-home:hover {
+    background-color: #0056b3;
+}
+.suggestions {
+    list-style: none;
+    padding: 0;
+}
+.suggestions li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+}
+.tab.active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+.job-listings {
+    display: flex;
+    flex-direction: column;
+}
+.job-listing {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+.job-listing:last-child {
+    border-bottom: none;
+}
+.job-title {
+    font-size: 18px;
+    color: #007bff;
+}
+.job-details {
+    color: #888;
+    font-size: 14px;
+}
+.tab-content {
+    display: none; /* Ensure all are hidden initially */
+}
+.tab-content.active {
+    display: block; /* Only show when active */
+}
+
