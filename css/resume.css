@@ -11,7 +11,7 @@
   --text-color-light: #707070;
   --container-color: #fafafa;
   --container-color-alt: #8e8e8e;
-  --body-color: #e8dddd;
+  --body-color:none;
 
   /* Font and typography */
   --body-font: 'Poppins', sans-serif;
