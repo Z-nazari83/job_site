@@ -699,3 +699,15 @@ img {
   border-radius: 5px;
   font-weight: bold;
 }
+
+/* change template */
+#switch-template{
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #b9d5f1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

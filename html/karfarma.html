@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل کارفرما</title>
+    <link rel="stylesheet" href="../css/karfarma.css">
+</head>
+<body dir="rtl">
+
+<div class="sidebar">
+    <h2>مدیریت آگهی‌ها</h2>
+    <ul>
+        <li><a href="#" id="allAds">همه آگهی‌ها</a></li>
+        <li><a href="#" id="activeAds">آگهی‌های فعال</a></li>
+        <li><a href="#" id="closedAds">آگهی‌های بسته شده</a></li>
+        <li><a href="#" id="createAd">ایجاد آگهی</a></li>
+        <li><a href="#" id="resumeFolders">پوشه‌های رزومه</a></li>
+        <li><a href="#" id="companyProfile">پروفایل شرکت</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <header>
+        <h1>لیست آگهی‌ها</h1>
+    </header>
+    <br>
+
+    <div class="search-bar">
+        <input type="text" id="jobSearch" placeholder="جستجوی در عنوان آگهی، شهر یا دسته‌بندی شغلی...">
+        <button onclick="searchJobs()">جستجو</button>
+    </div>
+
+    <div class="results" id="results">
+        <div class="paragraph">
+        <p>شما می‌توانید صفحه آگهی استخدامی ایجاد کنید.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // تابعی برای تغییر محتوای بخش نتایج
+    function updateResults(content) {
+        document.getElementById('results').innerHTML = content;
+    }
+
+    // افزودن event listener به هر گزینه در سایدبار
+    document.getElementById('allAds').addEventListener('click', () => {
+        updateResults('<h2>همه آگهی‌ها</h2><p>اینجا تمام آگهی‌ها نمایش داده می‌شود.</p>');
+    });
+
+    document.getElementById('activeAds').addEventListener('click', () => {
+        updateResults('<h2>آگهی‌های فعال</h2><p>اینجا فقط آگهی‌های فعال نمایش داده می‌شود.</p>');
+    });
+
+    document.getElementById('closedAds').addEventListener('click', () => {
+        updateResults('<h2>آگهی‌های بسته شده</h2><p>اینجا آگهی‌های بسته شده نمایش داده می‌شود.</p>');
+    });
+
+    document.getElementById('resumeFolders').addEventListener('click', () => {
+        updateResults('<h2>پوشه‌های رزومه</h2><p>پوشه‌های رزومه شما اینجا نمایش داده می‌شود.</p>');
+    });
+
+    document.getElementById('createAd').addEventListener('click', () => {
+        updateResults('<h2>ایجاد آگهی</h2><p>اینجا می‌توانید یک آگهی جدید ایجاد کنید.</p>');
+    });
+
+    document.getElementById('companyProfile').addEventListener('click', () => {
+        updateResults('<h2>پروفایل شرکت</h2><p>اطلاعات شرکت شما در اینجا نمایش داده می‌شود.</p>');
+    });
+</script>
+
+</body>
+</html>
